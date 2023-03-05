@@ -27,6 +27,8 @@ char password[] = "password2";
 #define SWARMTOOOLD 30 
 
 int my_swarmid = 0;
+#define MAXDELAY 500
+
 
 /*Packet types*/
 #define LIGHT_UPDATE_PACKET 0  // contains current light from a swarm device
