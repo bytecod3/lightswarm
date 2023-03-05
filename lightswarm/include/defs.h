@@ -21,7 +21,7 @@ char ssid[] = "Eduh";
 char password[] = "password2";
 
 #define SWARMSIZE 5
-#definE VERSION 1
+#define VERSION 1
 
 /* 30 seconds timeout to read */
 #define SWARMTOOOLD 30 
