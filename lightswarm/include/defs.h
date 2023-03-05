@@ -1,4 +1,5 @@
-
+#ifndef DEFS_H
+#define DEFS_H
 
 #define DEBUG 1
 
@@ -20,7 +21,7 @@ char ssid[] = "Eduh";
 char password[] = "password2";
 
 #define SWARMSIZE 5
-#defin VERSION 1
+#definE VERSION 1
 
 /* 30 seconds timeout to read */
 #define SWARMTOOOLD 30 
@@ -43,6 +44,7 @@ unsigned int local_port = 2910;
 /* master variables */
 bool master_state = true; // true if master, false if not
 
+int swarmAddresses[SWARMSIZE];
 int swarmClear[SWARMSIZE];
 int swarmVersion[SWARMSIZE];
 int swarmState[SWARMSIZE];
@@ -57,4 +59,4 @@ int greenColor;
 const int PACKET_SIZE = 14; // light update packet
 const int BUFFERSIZE = 1024;
 
-
+#endif
